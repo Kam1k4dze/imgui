@@ -569,7 +569,7 @@ bool ImFontAtlasBuildWithFreeTypeEx(FT_Library ft_library, ImFontAtlas* atlas, u
 
         // Compute multiply table if requested
         unsigned char multiply_table[256];
-        ImFontAtlasBuildMultiplyCalcLookupTable(multiply_table, cfg.RasterizerMultiply);
+        ImFontAtlasBuildMultiplyCalcLookupTable(multiply_table, src.RasterizerMultiply);
 
         // Gather the sizes of all rectangles we will need to pack
         for (int glyph_i = 0; glyph_i < src_tmp.GlyphsList.Size; glyph_i++)
